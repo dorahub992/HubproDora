@@ -1,0 +1,808 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/vinh12eqweaws/zingmods/refs/heads/main/zingpro')))()
+
+local Window = OrionLib:MakeWindow({Name = "⚡DoraHub PRO", HidePremium = false, SaveConfig = true, ConfigFolder = "dxl_bf"})
+
+local Tab = Window:MakeTab({
+	Name = "🌾Farm",
+	Icon = "rbxassetid://6026568198",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("🔹  Được hỗ trợ bởi script Redz Hub", "")
+local Tab2 = Window:MakeTab({
+	Name = "Stats",
+	Icon = "rbxassetid://4483362458",
+	PremiumOnly = false
+})
+
+Tab2:AddParagraph("🔹  🚧Stats đang trong tiến trình,...", "")
+local Tab3 = Window:MakeTab({
+	Name = "🛠️Settings",
+	Icon = "rbxassetid://6031280882",
+	PremiumOnly = false
+})
+
+Tab3:AddParagraph("🔹   Chế độ Fix Lag đã được nâng cấp", "")
+local Tab4 = Window:MakeTab({
+	Name = "🍍Fruit/đột kích",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab5 = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://6023426915",
+	PremiumOnly = false
+})
+
+local Tab6 = Window:MakeTab({
+	Name = "Shop",
+	Icon = "rbxassetid://6031265976",
+	PremiumOnly = false
+})
+
+Tab6:AddParagraph("🔹Các chức năng đang được sửa lỗi", "")
+
+local Tab7 = Window:MakeTab({
+	Name = "Discord",
+	Icon = "rbxassetid://6031094678", 
+	PremiumOnly = false
+})
+
+Tab7:AddParagraph("🔹 Những dịch vụ liên quan để hộ trợ bạn", "")
+
+local Tab8 = Window:MakeTab({
+    Name = "📖 Status",
+    Icon = "rbxassetid://6031280882", 
+    PremiumOnly = false
+})
+
+local Tab9 = Window:MakeTab({
+    Name = "🌴Island",
+    Icon = "rbxassetid://4483345998", 
+    PremiumOnly = false
+})
+
+local Tab10= Window:MakeTab({
+	Name = "👀 Visual",
+	Icon = "rbxassetid://4483362458", 
+	PremiumOnly = false
+})
+
+Tab10:AddParagraph("🔹 Chức năng này sẽ được cải hiện thêm", "")
+
+local Tab11= Window:MakeTab({
+	Name = "🦈Sea event",
+	Icon = "rbxassetid://6031154871", 
+	PremiumOnly = false
+})
+
+Tab11:AddParagraph("🔹 vui lòng hãy đăng ký lên gói Plus ", "")
+
+local Tab12= Window:MakeTab({
+	Name = "☄️Race",
+	Icon = "rbxassetid://4483345998", 
+	PremiumOnly = false
+})
+
+local Tab13= Window:MakeTab({
+	Name = "💭 Content",
+	Icon = "rbxassetid://6031068425", 
+	PremiumOnly = false
+})
+
+Tab13:AddParagraph(" --- 🎬phiên bản  --- ", "")
+
+Tab13:AddButton({
+	Name = "⚡ DoraHuBscript Version PRO",
+	Callback = function()
+	OrionLib:MakeNotification({
+            Name = "Thông báo!",
+            Content = " Bạn chưa đăng ký gói PRO  ❕vui lòng đăng kí",
+            Image = "rbxassetid://4483345998",
+            Time = 9
+        })
+	end    
+})
+
+Tab13:AddButton({
+	Name = "💠 DoraHuBscript Version Plus",
+	Callback = function()
+	OrionLib:MakeNotification({
+            Name = "Thông báo!",
+            Content = "Bạn chưa đăng ký gói Plus❕vui lòng đăng kí",
+            Image = "rbxassetid://4483345998",
+            Time = 9
+        })
+	end    
+})
+
+Tab13:AddButton({
+	Name = "📜 DoraHuBscript Version classic",
+	Callback = function()
+	OrionLib:MakeNotification({
+            Name = "Thông báo!",
+            Content = " Bạn phải đăng ký gói hội viên ™️❕",
+            Image = "rbxassetid://4483345998",
+            Time = 9
+        })
+	end    
+})
+
+Tab13:AddParagraph(" ---💻Admin--- ", "")
+
+Tab13:AddButton({
+	Name = "♠️Triple dark blade",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+	end    
+})
+
+Tab13:AddButton({
+	Name = "♣️ Dual dark blade",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+	end    
+})
+
+Tab13:AddButton({
+	Name = "🌧️ Rain fruit",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+	end    
+})
+
+Tab3:AddParagraph(" ---📠GAME--- ", "")
+
+Tab3:AddButton({
+	Name = "RTX",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet("https://pastebin.com/raw/vmjZ4UY8"))()
+	end
+})
+
+Tab3:AddButton({
+	Name = "Fix Lag",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+	end
+})
+
+Tab3:AddButton({
+	Name = "Anti Ban",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet("https://pastebin.com/raw/FPfaukXN"))()
+	end
+})
+
+Tab3:AddButton({
+	Name = "Farm Nhanh",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
+	end
+})
+
+Tab3:AddParagraph(" ---💻PC--- ", "")
+
+Tab3:AddButton({
+	Name = "🖥️ Chuyển sang giao diện máy tính",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+	end
+})
+
+Tab7:AddButton({
+    Name = "🔔 Kênh YouTube ",
+    Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Ủng hộ kênh nhé!",
+            Content = "kênh youtube:DoraHuBscript",
+            Image = "rbxassetid://4483345998",
+            Time = 4
+        })
+        -- Thay LINK_YOUTUBE của bạn bên dưới:
+        pcall(function()
+            game:OpenBrowserWindow("https://https://youtube.com/@dorahub992?si=Nn_yk415ubHNOOTC") 
+        end)
+    end
+})
+
+Tab2:AddButton({
+	Name = "status bản thân(NEW)",
+	Callback = function()
+        repeat wait(1) until game:IsLoaded()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AdminusGames/Blox_Fruits_Sniper/main/.lua'))()
+	end    
+})
+
+Tab2:AddParagraph(" ---🛠️auto stats--- ", "")
+
+local AutoStatMelee = false
+Tab2:AddToggle({
+	Name = "♠️Melee",
+	Default = false,
+	Callback = function(Value)
+		AutoStatMelee = Value
+		while AutoStatMelee do
+			task.wait(0.1)
+			pcall(function()
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint", "Melee", 1)
+			end)
+		end
+	end
+})
+
+local AutoStatDefense = false
+Tab2:AddToggle({
+	Name = " ♣️Defense",
+	Default = false,
+	Callback = function(Value)
+		AutoStatDefense = Value
+		while AutoStatDefense do
+			task.wait(0.1)
+			pcall(function()
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint", "Defense", 1)
+			end)
+		end
+	end
+})
+
+local AutoStatSword = false
+Tab2:AddToggle({
+	Name = " ♦️Sword",
+	Default = false,
+	Callback = function(Value)
+		AutoStatSword = Value
+		while AutoStatSword do
+			task.wait(0.1)
+			pcall(function()
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint", "Sword", 1)
+			end)
+		end
+	end
+})
+
+local AutoStatGun = false
+Tab2:AddToggle({
+	Name = "❤️Gun",
+	Default = false,
+	Callback = function(Value)
+		AutoStatGun = Value
+		while AutoStatGun do
+			task.wait(0.1)
+			pcall(function()
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint", "Gun", 1)
+			end)
+		end
+	end
+})
+
+local AutoStatBloxFruit = false
+Tab2:AddToggle({
+	Name = "🎰Blox Fruit",
+	Default = false,
+	Callback = function(Value)
+		AutoStatBloxFruit = Value
+		while AutoStatBloxFruit do
+			task.wait(0.1)
+			pcall(function()
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint", "Blox Fruit", 1)
+			end)
+		end
+	end
+})
+
+Tab:AddButton({
+	Name = "🌾auto farm",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))()
+	end    
+})
+
+Tab:AddButton({
+	Name = "🦴auto farm bones",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))()
+	end    
+})
+
+Tab:AddButton({
+	Name = "⚔️auto farm item",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/EN.lua"))()
+	end    
+})
+
+Tab:AddButton({
+	Name = "💰Chests Farm",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
+	end    
+})
+
+Tab:AddParagraph(" ---🎩Farm event--- ", "")
+
+Tab:AddButton({
+	Name = "❤️Farm heart",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = " chức năng này chỉ được cập nhật khi có sự kiện!",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+	end    
+})
+
+Tab:AddButton({
+	Name = "🍬Farm Candy",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = " chức năng này chỉ được cập nhật khi có sự kiện!",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+	end    
+})
+
+Tab:AddButton({
+	Name = "🚧 Coming Soon...",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = "Tính năng này sẽ được cập nhật sau!",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+	end    
+})
+
+Tab4:AddParagraph(" ---🛎️Script support --- ", "")
+
+Tab4:AddButton({
+	Name = "Redz Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))()
+	end    
+})
+
+Tab4:AddButton({
+	Name = "Hoho Hub",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+	end    
+})
+
+Tab4:AddButton({
+	Name = "Banana Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/neon"))()
+	end    
+})
+
+Tab4:AddButton({
+	Name = "Mukuro Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua"))()
+	end    
+})
+
+Tab4:AddParagraph(" --- 🍍Fruit box --- ", "")
+
+Tab4:AddToggle({
+	Name = "🌿Auto Random Fruit",
+	Default = false,
+	Description = "Hỗ trợ bởi RedzHub",
+	Callback = function(Value)
+		_G.AutoRandomFruit = Value
+		while _G.AutoRandomFruit do
+			task.wait(5)
+			pcall(function()
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin")
+			end)
+		end
+	end
+})
+
+Tab4:AddParagraph(" ---⚡Raid --- ", "")
+
+_G.AutoRaid = false
+Tab4:AddToggle({
+	Name = "⚔️ Tự động đi Raid",
+	Default = false,
+	Callback = function(v)
+		_G.AutoRaid = v
+		while _G.AutoRaid and task.wait(3) do
+			pcall(function()
+				local plr = game.Players.LocalPlayer
+				local placeId = game.PlaceId
+
+				if placeId == 7449423635 then -- Sea 3
+					local raidNpc = workspace.Map:FindFirstChild("Code") or workspace.Map:FindFirstChild("RaidLab") or workspace:FindFirstChild("RaidLab")
+					if raidNpc then
+						plr.Character.HumanoidRootPart.CFrame = raidNpc.CFrame + Vector3.new(0, 5, 0)
+						wait(1)
+
+						fireclickdetector(raidNpc:FindFirstChildWhichIsA("ClickDetector"))
+						wait(1)
+
+						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("RaidTeleport")
+					end
+				else
+					OrionLib:MakeNotification({
+						Name = "⚠️ Chỉ hỗ trợ Sea 3!",
+						Content = "Tính năng Auto Raid chỉ hoạt động ở Sea 3 (Third Sea)",
+						Image = "rbxassetid://6031280882",
+						Time = 8
+					})
+				end
+			end)
+		end
+	end
+})
+
+-- Teleport Sea 1
+Tab5:AddButton({
+	Name = "🌊 Chuyển sang Sea 1",
+	Callback = function()
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
+	end
+})
+
+-- Teleport Sea 2
+Tab5:AddButton({
+	Name = "🌊 Chuyển sang Sea 2",
+	Callback = function()
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelSecond")
+	end
+})
+
+-- Teleport Sea 3
+Tab5:AddButton({
+	Name = "🌊 Chuyển sang Sea 3",
+	Callback = function()
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelThird")
+	end
+})
+
+Tab5:AddParagraph(" ---🎩 Event --- ", "")
+
+Tab5:AddButton({
+	Name = "🎄Dịch chuyển đến đảo giáng sinh",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = "🚫Hiện vẫn chưa dùng được!",
+            Image = "rbxassetid://4483345998",
+            Time = 8
+        })
+	end    
+})
+
+Tab6:AddButton({
+	Name = "📦 Xem Stock Trái Ác Quỷ",
+	Callback = function()
+		local stock = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetFruits")
+		local msg = "🎯 Stock Trái Ác Quỷ hôm nay:\n\n"
+		for i,v in pairs(stock) do
+			if v["Stock"] then
+				msg = msg .. "- 🍇 " .. v["Name"] .. " - Giá: $" .. v["Price"] .. "\n"
+			end
+		end
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Stock Trái Ác Quỷ",
+			Text = msg,
+			Duration = 10
+		})
+	end
+})
+
+Tab6:AddButton({
+	Name = "🗡️ Mua Katana",
+	Callback = function()
+		BuyWeapon("Katana")
+	end
+})
+
+Tab6:AddButton({
+	Name = "⚔️ Mua Dual Katana",
+	Callback = function()
+		BuyWeapon("Dual Katana")
+	end
+})
+
+Tab6:AddButton({
+	Name = "🔨 Mua Iron Mace",
+	Callback = function()
+		BuyWeapon("Iron Mace")
+	end
+})
+
+Tab6:AddButton({
+	Name = "🏹 Mua Slingshot",
+	Callback = function()
+		BuyWeapon("Slingshot")
+	end
+})
+
+Tab6:AddButton({
+	Name = "🏹 Mua Refined Slingshot",
+	Callback = function()
+		BuyWeapon("Refined Slingshot")
+	end
+})
+
+Tab6:AddButton({
+	Name = "⚫ Mua Buso Haki (Armament)",
+	Callback = function()
+		BuyWeapon("Buso")
+	end
+})
+
+Tab6:AddButton({
+	Name = "🌀 Mua Ken Haki (Observation)",
+	Callback = function()
+		BuyWeapon("Ken")
+	end
+})
+
+Tab6:AddButton({
+	Name = "⚡ Mua Flash Step",
+	Callback = function()
+		BuyWeapon("Flash Step")
+	end
+})
+
+Tab7:AddButton({
+	Name = "Dịch vụ 🌀shopDorahub.VN",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = "🌀ShopDoraHub.VN sẽ được mở vào ngày 5/9/2025",
+            Time = 5
+        })
+	end    
+})
+
+Tab7:AddButton({
+	Name = "❕join Discord",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = "🚫Discord này hiện đang bảo trì",
+            Time = 5
+        })
+	end
+})
+
+Tab8:AddButton({
+	Name = "📟 Hiện thông tin nhân vật",
+	Callback = function()
+		local plr = game.Players.LocalPlayer
+		local level = plr.Data.Level.Value
+		local beli = plr.Data.Beli.Value
+		local frags = plr.Data.Fragments.Value
+		local sea = "Không rõ"
+
+		local placeId = game.PlaceId
+		if placeId == 2753915549 then
+			sea = "🌊 Sea 1"
+		elseif placeId == 4442272183 then
+			sea = "🌊 Sea 2"
+		elseif placeId == 7449423635 then
+			sea = "🌊 Sea 3"
+		end
+
+		OrionLib:MakeNotification({
+			Name = "📖 Thông tin nhân vật",
+			Content = "Level: "..level.."\n💰 Beli: "..beli.."\n🔯 Fragments: "..frags.."\nSea hiện tại: "..sea,
+			Image = "rbxassetid://4483345998",
+			Time = 7
+		})
+	end
+})
+
+Tab8:AddButton({
+	Name = "📌 Hiện chỉ số Stat",
+	Callback = function()
+		local plr = game.Players.LocalPlayer
+		local melee = plr.Data.Stats.Melee.Level.Value
+		local defense = plr.Data.Stats.Defense.Level.Value
+		local sword = plr.Data.Stats.Sword.Level.Value
+		local gun = plr.Data.Stats.Gun.Level.Value
+		local fruit = plr.Data.Stats["Demon Fruit"].Level.Value
+
+		OrionLib:MakeNotification({
+			Name = "📖 Chỉ số Stat",
+			Content = "Melee: "..melee.." | Defense: "..defense.."\nSword: "..sword.." | Gun: "..gun.."\nBlox Fruit: "..fruit,
+			Image = "rbxassetid://6031280882",
+			Time = 7
+		})
+	end
+})
+
+Tab8:AddButton({
+	Name = "⌛ Thời gian hiện tại",
+	Callback = function()
+		local time = os.date("%H:%M:%S - %d/%m/%Y")
+		OrionLib:MakeNotification({
+			Name = "🕓 Thời gian",
+			Content = "Hiện tại là: "..time,
+			Image = "rbxassetid://6031280882",
+			Time = 5
+		})
+	end
+})
+
+Tab9:AddButton({
+	Name = "🦊Island kitsune ",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = "chế độ này hiện không dùng được",
+            Time = 5
+        })
+	end    
+})
+
+Tab9:AddButton({
+	Name = "🎃Island mirage ",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = "chế độ này hiện không dùng được",
+            Time = 5
+        })
+	end    
+})
+
+Tab9:AddButton({
+	Name = "🌋Island prehistoric ",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Thông báo",
+            Content = "chế độ này hiện không dùng được",
+            Time = 5
+        })
+	end    
+})
+
+Tab10:AddParagraph(" ---🍗Hiện thị--- ", "")
+
+_G.ESPPlayer = false
+Tab10:AddToggle({
+	Name = "👁️ Hiện tên người chơi (ESP)",
+	Default = false,
+	Callback = function(v)
+		_G.ESPPlayer = v
+		while _G.ESPPlayer and task.wait(1) do
+			for _, plr in pairs(game.Players:GetPlayers()) do
+				if plr ~= game.Players.LocalPlayer and plr.Character and not plr.Character:FindFirstChild("ESPName") then
+					local esp = Instance.new("BillboardGui", plr.Character)
+					esp.Name = "ESPName"
+					esp.Size = UDim2.new(0, 80, 0, 20)
+					esp.Adornee = plr.Character:FindFirstChild("Head")
+					esp.AlwaysOnTop = true
+					esp.LightInfluence = 0
+					esp.StudsOffset = Vector3.new(0, 2.5, 0)
+					esp.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+					local text = Instance.new("TextLabel", esp)
+					text.Size = UDim2.new(1, 0, 1, 0)
+					text.BackgroundTransparency = 1
+					text.Text = plr.DisplayName or plr.Name
+					text.TextColor3 = Color3.fromRGB(120, 255, 120) -- Xanh lá nhẹ
+					text.TextStrokeTransparency = 0.7 -- có viền mờ
+					text.TextScaled = true
+					text.Font = Enum.Font.GothamSemibold -- Font đẹp, gọn
+				end
+			end
+		end
+	end
+})
+
+local bossESPEnabled = false
+
+Tab10:AddToggle({
+	Name = "👹 Hiển thị quái (ESP)",
+	CurrentValue = false,
+	Callback = function(Value)
+		bossESPEnabled = Value
+		if Value then
+			for _, v in pairs(workspace.Enemies:GetChildren()) do
+				if v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+					local esp = Instance.new("BillboardGui", v)
+					esp.Name = "BossESP"
+					esp.Size = UDim2.new(0, 120, 0, 20)
+					esp.StudsOffset = Vector3.new(0, 5, 0)
+					esp.AlwaysOnTop = true
+					local label = Instance.new("TextLabel", esp)
+					label.Size = UDim2.new(1, 0, 1, 0)
+					label.Text = v.Name
+					label.BackgroundTransparency = 1
+					label.TextColor3 = Color3.fromRGB(255, 0, 0)
+					label.TextScaled = true
+				end
+			end
+		else
+			for _, v in pairs(workspace.Enemies:GetChildren()) do
+				if v:FindFirstChild("BossESP") then
+					v.BossESP:Destroy()
+				end
+			end
+		end
+	end
+})
+
+Tab12:AddParagraph(" ---☄️Frags--- ", "")
+
+Tab12:AddButton({
+	Name = "🎲quay chủng tộc",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "thông báo",
+            Content = "  xin lỗi hiện chức năng này không dùng được!",
+            Image = "rbxassetid://4483345998",
+            Time = 9
+        })
+	end    
+})
+
+Tab12:AddButton({
+	Name = "🎲reset stats",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "thông báo",
+            Content = "  xin lỗi hiện chức năng này không dùng được!",
+            Image = "rbxassetid://4483345998",
+            Time = 9
+        })
+	end    
+})
+
+Tab12:AddParagraph(" ---⚡upgrade --- ", "")
+
+Tab12:AddButton({
+	Name = "⚙️upgrade gear",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "⚙️upgrade gear",
+            Content = " chức năng này không dùng được",
+            Image = "rbxassetid://4483345998",
+            Time = 9
+        })
+	end    
+})
+
+Tab12:AddButton({
+	Name = "☄️upgrade V2",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "upgrade V2",
+            Content = "vui lòng kích hoạt lại",
+            Image = "rbxassetid://4483345998",
+            Time = 9
+        })
+	end    
+})
+
+Tab12:AddButton({
+	Name = "☄️upgrade V3",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "upgrade V3",
+            Content = "vui lòng kích hoạt lại",
+            Image = "rbxassetid://4483345998",
+            Time = 9
+        })
+	end    
+})
